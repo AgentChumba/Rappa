@@ -1,0 +1,963 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\AutoOptic.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_INSLINZ DIALOG DISCARDABLE  0, 0, 202, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Устаўка лінзы ў аб'ектыў у вызначаную пазіцыю"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Уставіць",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CTEXT           "Static",IDC_ST_INS_STR,42,24,18,8,SS_SUNKEN
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,68,20,10,14
+    EDITTEXT        IDC_EDIT1,138,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Адлегласць ад папярэдняй паверхні (мм)",IDC_STATIC,40,
+                    54,90,18
+    EDITTEXT        IDC_EDIT2,42,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,42,108,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,138,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,138,108,40,14,ES_AUTOHSCROLL
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,100,104,36,24
+    LTEXT           "Таўшчыня лінзы",IDC_STATIC,98,80,36,16
+    LTEXT           "R1",IDC_STATIC,26,88,10,8
+    LTEXT           "R2",IDC_STATIC,26,110,10,8
+    RTEXT           "Нумар лінзы",IDC_STATIC,16,20,22,16
+END
+
+IDD_LINZ1 DIALOG DISCARDABLE  0, 0, 187, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Асноўныя параметры лінз (Першы шаг)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Далей >>",IDOK,130,38,50,14
+    PUSHBUTTON      "Адмяніць",IDCANCEL,130,64,50,14
+    EDITTEXT        IDC_EDIT1,46,10,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,46,44,40,14,ES_AUTOHSCROLL
+    LTEXT           "Другі радыюс лінзы",IDC_STATIC,10,42,30,23
+    EDITTEXT        IDC_EDIT3,46,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,46,120,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,160,10,20,14,ES_AUTOHSCROLL
+    LTEXT           "Таўшчына лінзы",IDC_STATIC,8,86,35,15
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,10,116,34,24
+    LTEXT           "Маштабны каэфіцэнт",IDC_STATIC,120,8,38,18
+    LTEXT           "Першы радыюс лінзы",IDC_STATIC,10,6,30,24
+    GROUPBOX        "",IDC_STATIC,2,0,92,144
+END
+
+IDD_APRACOUKA DIALOG DISCARDABLE  0, 0, 322, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Дадатковыя параметры лінзы (Другі шаг)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,260,6,50,14
+    PUSHBUTTON      "<< Назад",IDCANCEL,260,24,50,14
+    EDITTEXT        IDC_EDIT1,56,20,26,14,ES_AUTOHSCROLL
+    LTEXT           "Дэцэнтроўку",IDC_STATIC,8,62,46,12,SS_CENTERIMAGE
+    LTEXT           "Таўшчыню",IDC_STATIC,8,20,36,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT2,56,40,26,14,ES_AUTOHSCROLL
+    CONTROL         "Прасвятленне на 1-й паверхнасці",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,108,8,128,10
+    CONTROL         "Прасвятленне на 2-й паверхнасці",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,108,18,128,10
+    CTEXT           "+/-",IDC_STATIC,46,20,9,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Пасадку",IDC_STATIC,8,42,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,56,60,26,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,108,54,24,38,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,136,44,24,38,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,166,54,22,38,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "+",IDC_STATIC,128,46,8,8,SS_CENTERIMAGE
+    CTEXT           "x",IDC_STATIC,158,56,8,8,SS_CENTERIMAGE
+    GROUPBOX        "Фаскі на 1-й паверхнасці",IDC_STATIC,102,34,94,34
+    COMBOBOX        IDC_COMBO4,108,96,24,36,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,136,86,24,40,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,166,96,22,38,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "+",IDC_STATIC,128,88,8,8,SS_CENTERIMAGE
+    CTEXT           "x",IDC_STATIC,158,98,8,8,SS_CENTERIMAGE
+    GROUPBOX        "Фаскі на 2-й паверхнасці",IDC_STATIC,102,76,94,34
+    GROUPBOX        "Допуск на :",IDC_STATIC,4,6,86,74
+    EDITTEXT        IDC_EDIT4STR1,70,124,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5STR2,70,148,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6STR3,70,172,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7STR4,70,194,234,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO7,8,126,48,36,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Катэгорыя матэр'ялу",IDC_STATIC,10,110,40,16
+    LTEXT           "Нумар дэталі",IDC_STATIC,10,174,47,8
+    EDITTEXT        IDC_EDIT8,8,182,54,12,ES_AUTOHSCROLL
+    LTEXT           "Назва машыны",IDC_STATIC,10,146,53,8
+    EDITTEXT        IDC_EDIT9,8,154,52,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,66,112,246,100
+    CONTROL         "A4",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | BS_RIGHT | BS_PUSHLIKE,38,202,12,10
+    CONTROL         "A3",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | BS_PUSHLIKE,50,202,12,10
+    LTEXT           "Фармат",IDC_STATIC,8,203,28,8
+    RTEXT           "f'",IDC_STATIC,224,48,8,8
+    LTEXT           "Sf",IDC_STATIC,224,62,8,8
+    LTEXT           "S' f'",IDC_STATIC,220,74,12,8
+    LTEXT           "OdA",IDC_STATIC,216,88,15,8
+    LTEXT           "OdB",IDC_STATIC,216,102,15,8
+    EDITTEXT        IDC_EDIT10,238,44,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,276,44,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,238,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,238,72,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,276,72,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,238,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,238,100,26,12,ES_AUTOHSCROLL
+    CTEXT           "+/-",IDC_STATIC,266,44,9,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "+/-",IDC_STATIC,266,72,9,12,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Марка шкла",IDC_STATIC,10,86,41,8
+    EDITTEXT        IDC_EDIT17,8,94,54,12,ES_AUTOHSCROLL
+END
+
+IDD_ABEKTV DIALOG DISCARDABLE  0, 0, 187, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Аб`ектыў"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_EDIT1,62,8,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,62,30,22,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Дабавіць лінзу",IDC_CALLDLG_ADDLNZ,20,80,52,14
+    LTEXT           "Кардынаты прывязкі першай паверхні аб`ектыва",
+                    IDC_STATIC,4,6,40,44
+    CTEXT           "X",IDC_STATIC,50,8,8,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Y",IDC_STATIC,50,30,8,14,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Рэдагаваць лінзу",IDC_CALLDLG_EDLINZ,84,80,65,14
+END
+
+IDD_DLGNEWLINZ DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Новая лінза"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_EDIT1,60,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "Адлегласць ад папярэдняй паверхні (мм)",IDC_STATIC,4,4,
+                    52,26
+    EDITTEXT        IDC_EDIT2,28,50,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,28,72,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,124,50,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,124,72,40,14,ES_AUTOHSCROLL
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,86,68,36,24
+    LTEXT           "Таўшчыня лінзы",IDC_STATIC,84,44,36,16
+    LTEXT           "R1",IDC_STATIC,12,52,10,8
+    LTEXT           "R2",IDC_STATIC,12,74,10,8
+END
+
+IDD_DIALOG_EDIT_LINZ DIALOG DISCARDABLE  0, 0, 187, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Змяненне параметраў лінзы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CTEXT           "St",IDC_NumbLinzSTATIC,32,16,14,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN,WS_EX_CLIENTEDGE
+    CONTROL         "Spin2",IDC_SPIN1,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,52,16,10,14
+    EDITTEXT        IDC_EDIT1,40,90,40,14,ES_AUTOHSCROLL
+    CTEXT           "Нумар лінзы",IDC_STATIC,6,14,24,16,0,WS_EX_RIGHT
+    LTEXT           "Наступная",IDC_STATIC,64,10,38,9
+    LTEXT           "Папярэдняя",IDC_STATIC,64,26,42,9
+    LTEXT           "R1",IDC_STATIC,18,90,14,9
+    EDITTEXT        IDC_EDIT2,40,112,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,132,88,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,132,112,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,88,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Адлегласць ад папярэдняй паверхні (мм)",IDC_STATIC,34,
+                    50,52,26
+    LTEXT           "R2",IDC_STATIC,18,114,10,8
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,96,106,34,24
+    LTEXT           "Таўшчыня лінзы",IDC_STATIC,94,86,36,16
+    GROUPBOX        "",IDC_STATIC,4,0,106,40
+END
+
+IDD_DLG_DELLINZ DIALOGEX 0, 0, 187, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбярыце лінзу, якую трэба выдаліць"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Выдаліць",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CTEXT           "Static",IDC_LINZNAMBDEL,42,18,16,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,64,16,10,14
+    CTEXT           "Static",IDC_ST_R1,28,76,34,8,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_ST_R2,28,102,34,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_ST_T,130,76,30,8,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_ST_H,130,102,30,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_ST_PR,130,50,30,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "R1",IDC_STATIC,14,76,10,8
+    LTEXT           "R2",IDC_STATIC,14,102,10,8
+    LTEXT           "Таўшчыня лінзы",IDC_STATIC,92,72,36,16
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,94,96,34,24
+    LTEXT           "Адлегласць ад папярэдняй паверхні (мм)",IDC_STATIC,36,
+                    46,90,18
+    CTEXT           "Нумар лінзы",IDC_STATIC,6,14,24,16,0,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,6,38,174,86
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AutoOptic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,19,19
+    LTEXT           "AutoOptic Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Распрацоўка Капарыхі Паўла",IDC_STATIC,38,44,100,10
+    LTEXT           "e-mail:   ka_pavel@usa.net",IDC_STATIC,38,56,124,12
+END
+
+IDD_VYBAR DIALOG DISCARDABLE  0, 0, 187, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбярыце лінзу, якую трэба маляваць"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Выбраць",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CTEXT           "Static",IDC_LINZNAMBDEL,42,18,16,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,64,16,10,14
+    CTEXT           "Static",IDC_ST_R1,28,76,34,8,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_ST_R2,28,102,34,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_ST_T,130,76,30,8,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_ST_H,130,102,30,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_ST_PR,130,50,30,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "R1",IDC_STATIC,14,76,10,8
+    LTEXT           "R2",IDC_STATIC,14,102,10,8
+    LTEXT           "Таўшчыня лінзы",IDC_STATIC,92,72,36,16
+    LTEXT           "Агульная вышыня лінзы",IDC_STATIC,94,96,34,24
+    LTEXT           "Адлегласць ад папярэдняй паверхні (мм)",IDC_STATIC,36,
+                    46,90,18
+    CTEXT           "Нумар лінзы",IDC_STATIC,6,14,24,16,0,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,6,38,174,86
+END
+
+IDD_DLG_VYBAR_SKL DIALOG DISCARDABLE  0, 0, 285, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбар склейкі"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,24,50,14
+    LTEXT           "Static",IDC_NUMARSKLEIKI,28,16,18,8,SS_SUNKEN
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,54,14,8,14
+    LTEXT           "R1",IDC_STATIC,70,47,10,8
+    LTEXT           "R1",IDC_STATIC,70,70,10,8
+    LTEXT           "Static",IDC_ST_L2_T,190,71,28,8,SS_SUNKEN
+    LTEXT           "R2",IDC_STATIC,129,48,10,8
+    LTEXT           "R2",IDC_STATIC,129,71,10,8
+    LTEXT           "T1",IDC_STATIC,177,48,9,8
+    LTEXT           "T2",IDC_STATIC,177,71,9,8
+    LTEXT           "H",IDC_STATIC,234,48,8,8
+    LTEXT           "Static",IDC_ST_L2_H,247,71,23,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L1_R1,83,48,29,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L2_R1,83,71,29,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L1_R2,142,48,28,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L1_T,190,48,28,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L1_H,247,48,23,8,SS_SUNKEN
+    LTEXT           "Static",IDC_ST_L2_R2,142,71,28,8,SS_SUNKEN
+    LTEXT           "H",IDC_STATIC,234,71,8,8
+    GROUPBOX        "",IDC_STATIC,7,41,271,17
+    GROUPBOX        "",IDC_STATIC,7,64,271,17
+    LTEXT           "1-я лінза",IDC_STATIC,13,47,48,9
+    LTEXT           "2-я лінза",IDC_STATIC,13,70,48,8
+    LTEXT           "Маштаб ",IDC_STATIC,117,18,30,8
+    EDITTEXT        IDC_EDIT_MASTB,149,15,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_INSLINZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOG_EDIT_LINZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DLG_DELLINZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DLG_VYBAR_SKL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_AUTOOPTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Загрузіць з Expromt-а",       ID_MENUZAGRUZIC
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Оптыка"
+    BEGIN
+        MENUITEM "Лінза",                       ID_Linz, HELP
+        MENUITEM "Выбар лінзы з аб'ектыва",     ID_MENUVYBAR
+        MENUITEM "Апрацоўка",                   ID_Aprac
+        MENUITEM SEPARATOR
+        MENUITEM "Аб`ектыў",                    ID_ABV
+        MENUITEM "Уставіць лінзу  ў №",         ID_MenuInsLinz
+        MENUITEM "Выдаліць лінзу №",            ID_MenuDelLinz
+        MENUITEM "Згенерырваць файл",           ID_AbvMakeFile
+        MENUITEM SEPARATOR
+        MENUITEM "Выбар склейкі",               ID_MENUVybSkl
+        MENUITEM "Апрацоўка склейкі",           ID_MENUapracSkl
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Настройкі",                   ID_MENUITEMNASTR
+        MENUITEM "Трансляцыя ў AutoCad",        ID_MENUITEMTRANSL
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About AutoOptic...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_MENUITEMTRANSL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_32771                "Фармаванне лінзы (Асноўныя характарыстыкі лінзы)"
+    ID_Aprac                "Апрацоўка лінзы"
+    ID_MENUITEM32774        "Фармаванне аб`ектыва"
+    ID_ABV                  "Фармаванне аб`ектыва "
+    ID_MENUITEM32776        "Дабаўленне лінз у аб`ектыў у вызначаемую пазіцыю "
+    ID_MENUITEM32777        "Выдаленне лінзы з вызначанай пазіцыі"
+    ID_MENUITEM32778        "Генеруецца script камандны файл для AutoCad"
+    ID_MENUITEMTRANSL       "Трансляцыя ў AutoCad\nТрансляцыя"
+    ID_MENUVYBAR            "Выбар лінзы з існуючага аб'ектыва для краслення"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x23, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_BEL)
+#ifdef _WIN32
+LANGUAGE 0x23, 0x1
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_PATH_TO_ACAD DIALOG DISCARDABLE  0, 0, 279, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Размяшчэнне Autocad-a"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,222,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,24,50,14
+    LTEXT           "Набярыце, пры неабходнасці, або змяніце прапанаваны варыянт знаходжання праграмы Acad.exe",
+                    IDC_STATIC,19,14,186,20
+    EDITTEXT        IDC_EDIT1,19,51,253,13,ES_AUTOHSCROLL
+END
+
+IDD_DLG_APRAC_SKL DIALOG DISCARDABLE  0, 0, 264, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Параметры для склейкі"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,24,50,14
+    EDITTEXT        IDC_EDIT1,46,12,34,14,ES_AUTOHSCROLL
+    LTEXT           "Допуск на таўшчыню склейкі",IDC_STATIC,7,7,39,25
+    LTEXT           "Нумар дэталі",IDC_STATIC,25,71,54,8
+    EDITTEXT        IDC_EDIT8,25,79,54,12,ES_AUTOHSCROLL
+    LTEXT           "Назва машыны",IDC_STATIC,25,43,54,8
+    EDITTEXT        IDC_EDIT9,25,51,54,12,ES_AUTOHSCROLL
+    RTEXT           "f'",IDC_STATIC,117,28,8,8
+    LTEXT           "Sf",IDC_STATIC,117,42,8,8
+    LTEXT           "S' f'",IDC_STATIC,113,54,12,8
+    LTEXT           "OdA",IDC_STATIC,109,68,15,8
+    LTEXT           "OdB",IDC_STATIC,109,82,15,8
+    EDITTEXT        IDC_EDIT10,131,24,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,169,24,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,131,38,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,131,52,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,169,52,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,131,66,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,131,80,26,12,ES_AUTOHSCROLL
+    CTEXT           "+/-",IDC_STATIC,159,24,9,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "+/-",IDC_STATIC,159,52,9,12,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT4STR1,11,114,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5STR2,11,138,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6STR3,11,162,234,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7STR4,11,184,234,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,102,246,100
+    CONTROL         "A4",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,203,86,21,10
+    CONTROL         "A3",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,223,86,22,10
+    LTEXT           "Фармат",IDC_STATIC,213,74,32,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_PATH_TO_ACAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DLG_APRAC_SKL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0x23, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About AutoOptic...",         ID_APP_ABOUT
+    END
+END
+
+IDR_AUTOOPTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\AutoOptic.ico"
+IDR_AUTOOPTYPE          ICON    DISCARDABLE     "res\\AutoOpticDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_AUTOOPTYPE_CNTR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AutoOptic MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AutoOptic\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AutoOptic.EXE\0"
+            VALUE "ProductName", "AutoOptic Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "AutoOptic"
+    IDR_AUTOOPTYPE          "\nAutoOp\nAutoOptic\nAutoOptic Files (*.aop)\n.aop\nAutoOptic.Document\nAutoOptic Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AutoOptic"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEMTRANSL       "Трансляцыя ў AutoCad\n Трансляцыя "
+    ID_BUTTONAUTOCAD        "Трансляцыя ў Autocad"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\AutoOptic.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

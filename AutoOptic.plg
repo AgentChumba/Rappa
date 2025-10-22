@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AutoOptic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Release/AutoOptic.res" /d "NDEBUG" /d "_AFXDLL" "D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\AutoOptic.rc"" 
+Creating temporary file "C:\TEMP\RSP92.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/AutoOptic.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\AutoOptic.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\AutoOpticDoc.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\AutoOpticView.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\ChildFrm.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\CntrItem.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\D_linz1.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_abektv.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_aprac_skl.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_aprc.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_del_linz.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_edit_ln.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_ins_linz.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_newln.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_path_to_acad.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_vybar.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\Dlg_vybar_skl.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\linza.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\LinzView.cpp"
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP92.tmp" 
+Creating temporary file "C:\TEMP\RSP93.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/AutoOptic.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Program Files\Microsoft Visual Studio\MyProjects\AutoOptic\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP93.tmp" 
+Creating temporary file "C:\TEMP\RSP94.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/AutoOptic.pdb" /machine:I386 /out:"Release/AutoOptic.exe" 
+".\Release\AutoOptic.obj"
+".\Release\AutoOpticDoc.obj"
+".\Release\AutoOpticView.obj"
+".\Release\ChildFrm.obj"
+".\Release\CntrItem.obj"
+".\Release\D_linz1.obj"
+".\Release\Dlg_abektv.obj"
+".\Release\Dlg_aprac_skl.obj"
+".\Release\Dlg_aprc.obj"
+".\Release\Dlg_del_linz.obj"
+".\Release\Dlg_edit_ln.obj"
+".\Release\Dlg_ins_linz.obj"
+".\Release\Dlg_newln.obj"
+".\Release\Dlg_path_to_acad.obj"
+".\Release\Dlg_vybar.obj"
+".\Release\Dlg_vybar_skl.obj"
+".\Release\linza.obj"
+".\Release\LinzView.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\AutoOptic.res"
+]
+Creating command line "link.exe @C:\TEMP\RSP94.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AutoOptic.cpp
+AutoOpticDoc.cpp
+AutoOpticView.cpp
+ChildFrm.cpp
+CntrItem.cpp
+D_linz1.cpp
+Dlg_abektv.cpp
+Dlg_aprac_skl.cpp
+Dlg_aprc.cpp
+Dlg_del_linz.cpp
+Dlg_edit_ln.cpp
+Dlg_ins_linz.cpp
+Dlg_newln.cpp
+Dlg_path_to_acad.cpp
+Dlg_vybar.cpp
+Dlg_vybar_skl.cpp
+linza.cpp
+LinzView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\TEMP\RSP96.tmp" with contents
+[
+/nologo /o"Release/AutoOptic.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\AutoOptic.sbr"
+".\Release\AutoOpticDoc.sbr"
+".\Release\AutoOpticView.sbr"
+".\Release\ChildFrm.sbr"
+".\Release\CntrItem.sbr"
+".\Release\D_linz1.sbr"
+".\Release\Dlg_abektv.sbr"
+".\Release\Dlg_aprac_skl.sbr"
+".\Release\Dlg_aprc.sbr"
+".\Release\Dlg_del_linz.sbr"
+".\Release\Dlg_edit_ln.sbr"
+".\Release\Dlg_ins_linz.sbr"
+".\Release\Dlg_newln.sbr"
+".\Release\Dlg_path_to_acad.sbr"
+".\Release\Dlg_vybar.sbr"
+".\Release\Dlg_vybar_skl.sbr"
+".\Release\linza.sbr"
+".\Release\LinzView.sbr"
+".\Release\MainFrm.sbr"]
+Creating command line "bscmake.exe @C:\TEMP\RSP96.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+AutoOptic.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
